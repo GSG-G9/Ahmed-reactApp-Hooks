@@ -18,13 +18,13 @@ const CovidPage = () => {
       <button type="button" onClick={handelSubmit}>
         submit
       </button>
-      {covid && 
+      {covid.length>0 && 
         <div>
-          <p>The Country is:{covid.Country}</p>
-          <p>The Date is:{covid.Date}</p>
-          <p>Number Of Deaths is:{covid.Deaths}</p>
-          <p>Number Of Active is:{covid.Active}</p>
-          <p>Number Of Recovered is :{covid.Recovered}</p>
+          <p>The Country is:{covid[0].Country}</p>
+          <p>The Date is:{covid[0].Date}</p>
+          <p>Number Of Deaths is:{covid[0].Deaths}</p>
+          <p>Number Of Active is:{covid[0].Active}</p>
+          <p>Number Of Recovered is :{covid[0].Recovered}</p>
           CovidPage
         </div>
       }
